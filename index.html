@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-bunayya.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome5/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Bunayya.co.id</title>
+  </head>
+
+  <body>
+
+    <section class="bny-navbar-dekstop" id="bny-navbar-wrapper">
+      <nav class="custom-navbar navbar-light bg-light p-2">
+        <div class="container ">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-8">
+              <div class="brand=logo d-flex align-items-center  ">
+                <img class="img-responsive" alt="logo bunayya" src="logobunayya.png" />
+
+                <form class="d-flex w-75 ms-3  search-produk">
+                  <div class="input-group align-items-center">
+                    <input type="text" class="form-control" placeholder="Search Produk" aria-label="Search Produk"
+                      aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1">Cari</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4 text-end">
+              <button class="btn bny-warning rounded-pill text-right">Buat Custom Sendiri >
+              </button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="bny-menu-bar mt-2">
+                <ul class="navbar-nav">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Promo</a>
+                  </li>
+
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="index.html">Kebutuhan Bisnis/Kantor</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="index.html">Cara Pesan</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link active" href="index.html">Belanja</a>
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="index.html">Buat Toko Sendiri</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 text-end">
+              <div class="bny-menu-inline w-100 mt-3">
+
+                <div class="submenu-inline d-flex  justify-content-end align-items-center">
+                  <div class="sub-notification ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-bell" viewBox="0 0 16 16">
+                      <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                    </svg>
+                    <span>0</span>
+                  </div>
+                  <div class="sub-cart ms-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-cart" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </div>
+
+                  <div class="bny-sub-login ms-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bny-modal-login">
+                      Login
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bny-modal-login" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <div class="mb-3">
+                              <label for="bny-login-email" class="form-label">Email</label>
+                              <input type="email" class="form-control" name="bny-login-email" id="bny-login-email"
+                                aria-describedby="bny-email-help" placeholder="Masukan Email Anda">
+                            </div>
+                            <div class="">
+                              <label for="bny-login-password" class="form-label">Password</label>
+                              <input type="password" class="form-control" name="bny-login-password"
+                                id="bny-login-password" placeholder="Masukkan Password Anda">
+                            </div>
+                          </div>
+
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Login</button>
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pemisah ms-1 d-flex justify-content-center align-items-center">|</div>
+                  <div class="bny-sub-register ms-1">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bny-modal-register">
+                      Register
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bny-modal-register" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Register</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <div class="mb-1">
+                              <label for="bny-register" class="form-label">Nama</label>
+                              <input type="text" class="form-control" name="bny-register" id="bny-register"
+                                aria-describedby="helpId" placeholder="Masukan Nama Anda">
+                            </div>
+                            <div class="mb-1">
+                              <label for="bny-register-email" class="form-label">Email</label>
+                              <input type="email" class="form-control" name="bny-register-email" id="bny-register-email"
+                                aria-describedby="bny-email-help" placeholder="Masukan Email Anda">
+                            </div>
+                            <div class="">
+                              <label for="bny-register-password" class="form-label">Password</label>
+                              <input type="password" class="form-control" name="bny-register-password"
+                                id="bny-register-password" placeholder="Masukkan Password Anda">
+                            </div>
+                          </div>
+
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Register </button>
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="bny-navbar-mobile" id="bny-navbar-wrapper">
+      <div class="container-fluid">
+
+        <div class="bny-menu-mobile">
+          <input type="checkbox" id="active">
+          <label for="active" class="menu-btn"><span></span></label>
+          <label for="active" class="close"></label>
+          <div class="wrapper ">
+            <div class="label-menu text-center ">Menu</div>
+            <div class="bny-menu-content">
+              <a class="bny-login-mobile" href="index.html">Login </a>
+              <div class="separator-menu-mobile"></div>
+              <a class="bny-register-mobile" href="index.html">Register </a>
+              <div class="separator-menu-mobile"></div>
+
+              <div class="icon-link-mobile">
+                <a href="index.html">
+                  <i class="fas fa-store fa-md"></i>
+                  Buka Toko
+                </a>
+                <a href="index.html">
+                  <i class="fas fa-border-all fa-md"></i>
+                  Semua Produk
+                </a>
+                <a href="index.html">
+                  <i class="fas fa-tshirt fa-md"></i>
+                  Custom Satuan
+                </a>
+                <a href="index.html">
+                  <i class="fas fa-percent fa-md"></i>
+                  Promo
+                </a>
+              </div>
+              <div class="separator-menu-mobile"></div>
+              <div class="need-help">
+                <div class="title-need-help">Butuh Bantuan ?</div>
+                <div class="circle-icon-help-menu">
+                  <a href="index.html" class="phone">
+                    <i class="fas fa-phone fa-md"></i>
+                  </a>
+                  <a href="index.html" class="whatsApp">
+                    <i class="fab fa-whatsapp fa-md"></i>
+                  </a>
+                  <a class="mail" href="index.html">
+                    <i class="far fa-envelope"></i>
+                  </a>
+                </div>
+                <div class="shorcut-menu-link-help">
+                  <a href="index.html">Cicilan Tanpa Kartu Kredit</a>
+                  <a href="index.html">panduan ukuran</a>
+                  <a href="index.html">aturan pengembalian produk</a>
+                  <a href="index.html">tentang bargros.id</a>
+                </div>
+                <div class="separator-menu-mobile"></div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <nav class="bny-brand-mobile">
+          <img class="img-responsive " alt="logo bunayya" src="logobunayya.png" />
+
+          <div class="bny-menu-icon-mobile">
+            <i class="fas fa-search fa-lg "></i>
+
+            <div class="sub-notification ms-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z">
+                </path>
+              </svg>
+              <span>0</span>
+            </div>
+
+            <div class="sub-cart ms-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                </path>
+              </svg>
+
+            </div>
+          </div>
+        </nav>
+
+
+        <div class="bny-category-mobile">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-6" id="bny-category">
+              <div class="sec-center">
+                <input class="dropdown" type="checkbox" id="dropdown11" name="dropdown11" />
+                <label class="for-dropdown" for="dropdown11">Kategori<i class="fas fa-chevron-down"></i></label>
+                <div class="section-dropdown">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="judul-category-mobile">Sirwal</div>
+                      <a href="#">Orizon 1 </a>
+                      <a href="#">Orizon 2 </a>
+                      <a href="#">Orizon 3 </a>
+                    </div>
+                    <div class="col-6">
+                      <div class="judul-category-mobile">Kurta</div>
+                      <a href="#">Semi Formall 1 </a>
+                      <a href="#">Semi Formall 2</a>
+                      <a href="#">Semi Formall 3</a>
+                    </div>
+                    <div class="col-6 mt-3">
+                      <div class="judul-category-mobile">Beanie Hat</div>
+                      <a href="#">Model 1 </a>
+                      <a href="#">Model 2</a>
+                      <a href="#">Model 3</a>
+                    </div>
+                    <div class="col-6 mt-3">
+                      <div class="judul-category-mobile">Sajadah</div>
+                      <a href="#">Model 1 </a>
+                      <a href="#">Model 2</a>
+                      <a href="#">Model 3</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 text-end">
+              <div class="bny-link-mobile-navbar">
+                <a href="index.html" class="ms-3 active">Create</a>
+                <a href="index.html" class="ms-3">Promo</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bny-category-dekstop" id="bny-category">
+      <div class="container bny-grid-category">
+        <!-- Category Pertama -->
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown1" name="dropdown1" />
+          <label class="for-dropdown" for="dropdown1">Kurta<i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <input class="dropdown-sub" type="checkbox" id="dropdown1-sub" name="dropdown1-sub" />
+            <label class="for-dropdown-sub" for="dropdown1-sub">Dropdown Sub <i class="fas fa-plus"></i></label>
+            <div class="section-dropdown-sub">
+              <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i> </a>
+              <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i> </a>
+            </div>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i> </a>
+          </div>
+        </div>
+
+        <!-- Category Kedua -->
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown2" name="dropdown2" />
+          <label class="for-dropdown" for="dropdown2">Sirwal<i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown3" name="dropdown3" />
+          <label class="for-dropdown" for="dropdown3">Hijaz<i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown4" name="dropdown4" />
+          <label class="for-dropdown" for="dropdown4">Beanie Hat<i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown5" name="dropdown5" />
+          <label class="for-dropdown" for="dropdown5">Gamis <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown6" name="dropdown6" />
+          <label class="for-dropdown" for="dropdown6">Racak <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown7" name="dropdown7" />
+          <label class="for-dropdown" for="dropdown7">Tumbler <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown8" name="dropdown8" />
+          <label class="for-dropdown" for="dropdown8">Sajadah <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown9" name="dropdown9" />
+          <label class="for-dropdown" for="dropdown9">Kids <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown10" name="dropdown10" />
+          <label class="for-dropdown" for="dropdown10">Koko <i class="fas fa-chevron-down"></i></label>
+          <div class="section-dropdown">
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+            <a href="#">Dropdown Link <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="bny-banner-large">
+      <div class="container container-mobile">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-12 mb-2">
+            <div id="carousel-large-promo" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-large-promo" data-bs-slide-to="0" class="active"
+                  aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#carousel-large-promo" data-bs-slide-to="1" aria-label="Slide 2"
+                  class=""></button>
+                <button type="button" data-bs-target="#carousel-large-promo" data-bs-slide-to="2" aria-label="Slide 3"
+                  class=""></button>
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <a href="/register">
+                    <img
+                      src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nKjviexEdoLMmf9nEoWz3rWsJVLuRFqjPhFiKaC1iA.png"
+                      class="d-block w-100" alt="...">
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="/register">
+                    <img
+                      src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9ZX1eH00fnf3sp2f9nEzvIrtJhoUp9TbS2nwIvvKIyEQ.png"
+                      class="d-block w-100" alt="...">
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="/register">
+                    <img
+                      src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9n7sBIoAkQkCSJf9nEq3rhjPiNlq0TiCJm2w0rCXsnw.png"
+                      class="d-block w-100" alt="...">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-large-promo"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-large-promo"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- COL  -->
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
+            <div class="banner-small">
+              <img src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp"
+                class="img-fluid" alt="gratis ongkir">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bny-card-services ">
+      <div class="container container-mobile">
+        <div class="row align-items-center justify-content-end">
+
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Garansi Produk</h5>
+                <p class="card-text">Sederhana dan mudah untuk ganti atau refund produk</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Gratis Ongkir</h5>
+                <p class="card-text">Gratis ongkos kirim untuk semua pemesanan diatas 250rb.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Bayar Di tempat (COD) </h5>
+                <p class="card-text">Sederhana dan mudah untuk ganti atau refund produk</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Pelanggan bahagia</h5>
+                <p class="card-text">Gambar produk jauh lebih berarti daripada 1000 kata </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="bny-banner-promo-small">
+      <div class="container container-mobile">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+            <img src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp"
+              class="img-fluid"
+              alt="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+            <img src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp"
+              class="img-fluid"
+              alt="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+            <img src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp"
+              class="img-fluid"
+              alt="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
+            <img src="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp"
+              class="img-fluid"
+              alt="https://bdsgp.my.id/img/800/bw5d48ohbw5fisnofm_3/f9nFomQj9GvguMf9oeR0bBwGj7ZB6S5quW1vcxjLg.webp">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="all-product ">
+      <div class="container container-mobile">
+        <div class="product-offer mt-5">
+          <div class="all-produk-title">
+            <h2>Koleksi Produk Hari ini</h2>
+          </div>
+
+          <div class="row" id="produk_terbaru_kami">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <a href="index.html">
+
+                <div class="card card-portrait" id="targetLazy">
+                  <div class="sale-percent-wrapper">
+                    <div class="sale_percent d-flex align-items-center justify-content-center"
+                      ng-show="$ctrl.product.sale.active">-8%</div>
+                  </div>
+                  <img loading="lazy"
+                    src="https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fzYbzWbLMtFlhr8fz6n3jqskDEYFe1S2C5S8TQZX41A.webp"
+                    data-src="https://images.unsplash.com/photo-1638885910090-660c91a78084?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top lazy" alt="gambar-produk">
+
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="card-price me-2">Rp 15.000</p>
+                      <p class="card-price corret-price">Rp 15.000</p>
+                    </div>
+                    <!-- keterangan discount -->
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <a href="index.html">
+
+                <div class="card card-portrait" id="targetLazy">
+                  <div class="sale-percent-wrapper">
+                    <div class="sale_percent d-flex align-items-center justify-content-center"
+                      ng-show="$ctrl.product.sale.active">-8%</div>
+                  </div>
+                  <img loading="lazy"
+                    src="https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/f6dOtABRaXysLodf6dtCOsQIzOrzzcQlCBjxEWUBp5g.webp"
+                    data-src="https://images.unsplash.com/photo-1638900742298-e542e3027401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top lazy" alt="gambar-produk">
+
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="card-price me-2">Rp 15.000</p>
+                      <p class="card-price corret-price">Rp 15.000</p>
+
+                    </div>
+
+                    <!-- keterangan discount -->
+                    <div class="card-discount">
+                      <div class="parent-badge">
+
+                      </div>
+                      <div class="card-discount-title">72%</div>
+
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <a href="index.html">
+
+                <div class="card card-portrait" id="targetLazy">
+                  <div class="sale-percent-wrapper">
+                    <div class="sale_percent d-flex align-items-center justify-content-center"
+                      ng-show="$ctrl.product.sale.active">-8%</div>
+                  </div>
+                  <img loading="lazy"
+                    src="https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fBcSWzQ6R2NcfkhfBcbeabfW87SxiXQxOfbHTRjQHBsg.webp"
+                    data-src="https://images.unsplash.com/photo-1638887124557-395fc38cc4d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top lazy" alt="gambar-produk">
+
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="card-price me-2">Rp 15.000</p>
+                      <p class="card-price corret-price">Rp 15.000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <a href="index.html">
+
+                <div class="card card-portrait" id="targetLazy">
+                  <div class="sale-percent-wrapper">
+                    <div class="sale_percent d-flex align-items-center justify-content-center"
+                      ng-show="$ctrl.product.sale.active">-8%</div>
+                  </div>
+                  <img loading="lazy"
+                    src="https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fYSN1ArGesJCMffYErr4ZitWQtxGtQmSqqK6DqINBug.webp"
+                    data-src="https://images.unsplash.com/photo-1638864031355-ae1bf0f3717e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top lazy" alt="gambar-produk">
+
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                    <div class="d-flex align-items-center">
+                      <p class="card-price me-2">Rp 15.000</p>
+                      <p class="card-price corret-price">Rp 15.000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- all produk  -->
+        </div>
+
+      </div>
+    </section>
+
+    <section class="m-subscribe1 pt-5 pb-5 mt-3 d-none bg-light" id="bny-subscribe-newsletter">
+      <div class="container container-mobile">
+        <div class="row align-items-center justify-content-end text-center">
+          <div class="col-12 ">
+            <h2 class="m-subscribe1__title mb-3">Jadi VIP Member dan nikmati promonya
+
+            </h2>
+            <div class="input-group ">
+              <input type="text" class="form-control" placeholder="Subscribe Newsletter"
+                aria-label="Subscribe Newsletter" aria-describedby="bny-subscribe-newsletter">
+              <button class="btn btn-success" type="button" id="bny-subscribe-newsletter">Submit</button>
+            </div>
+            <div class="bny-follow-media-sosial mt-3">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-light" id="bny-footers">
+      <div class="d-flex flex-column h-100">
+        <!-- FOOTER -->
+        <footer class="w-100 py-4 flex-shrink-0">
+          <div class="container container-mobile py-4">
+            <div class="row gy-4 gx-5">
+              <div class="col-lg-4 col-md-6">
+                <img src="logobunayya.png" class="img-fluid w-50 mb-3" />
+                <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt.</p>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <h5 class=" mb-3">Quick links</h5>
+                <ul class="list-unstyled text-muted">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Get started</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <h5 class=" mb-3">Quick links</h5>
+                <ul class="list-unstyled text-muted">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Get started</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h5 class=" mb-3">Jasa Pengiriman</h5>
+                <div class="img-jasa-pengiriman">
+                  <img src="./assets/img-jasa-kirim/jne.png" class="img-thumbnail" alt="jasa-kirim">
+                  <img src="./assets/img-jasa-kirim/j&t.png" class="img-thumbnail" alt="jasa-kirim">
+                  <img src="./assets/img-jasa-kirim/tiki.png" class="img-thumbnail" alt="jasa-kirim">
+                  <img src="./assets/img-jasa-kirim/sicepat.png" class="img-thumbnail" alt="jasa-kirim">
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="col-xl-12 col-md-12 col-sm-6 col-xs-12  mb-sm-12 pt-3 pb-3 border-top">
+        <div class="title_content text-center">
+          <small class="mt-2 text-muted" style="font-size: 14px;">© Copy 2022 Bargros.id</small>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+  </body>
+
+</html>
