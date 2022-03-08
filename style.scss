@@ -11,6 +11,11 @@ body {
      font-weight: 400;
      font-size: 14px ;
 }
+h2{
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
 .bny-warning {
      background-color: #fdd13a ;
 }
@@ -563,7 +568,11 @@ body {
 // SECTION BANNER LARGE BUNAYYA
 .bny-banner-large {
   margin-top: 20px ;
+
   .carousel {
+    .carousel-item {
+      max-height: 331px ;
+    }
     .carousel-indicators {
       display: flex;
 
@@ -622,13 +631,41 @@ body {
   .banner-small {
     width: 100% ;
     height: 100% ;
+
+  .large-poster{
+    max-height: 46vh;
+    height: auto  ;
+    margin-bottom: 20px;
+    }
+    .small-poster{
+      max-height: 20vh;
+      height: auto;
+
+    }
     img {
       width: 100%;
-      height: 100%;
       background-size: cover;
       object-fit: cover;
       border-radius: 10px;
+
     }
+  }
+}
+
+.link-lihat-semua-koleksi{
+  margin-bottom: 0.5rem;
+  text-decoration:  underline !important;
+  display: block ;
+  i{
+    font-size: 11px;
+  }
+}
+
+// Section banner Smamll bunayya
+.bny-banner-promo-small {
+  .link-lihat-semua-koleksi{
+    margin-bottom: 0.5rem;
+    display: block ;
   }
 }
 
@@ -963,6 +1000,9 @@ a:hover, a:focus {
 // RESPONSIVE CODE
 
 @media (max-width: 552px ){
+  h2{
+    font-size: 24px;
+  }
 
   .bny-navbar-mobile {
     .bny-brand-mobile {
@@ -973,15 +1013,27 @@ a:hover, a:focus {
   }
   .bny-banner-large {
     margin-top: 10px ;
+    .carousel-item{
+      height: auto !important;
+    }
     .banner-small{
-   img{
-    width: 100%;
-    height: 215px;
-    background-size: cover;
-    -o-object-fit: cover;
-    object-fit: fill;
-    border-radius: 10px;
-   }
+      .large-poster{
+        max-height: 46vh;
+        height: 150px  ;
+        margin-bottom: 8px;
+        }
+        .small-poster{
+          max-height: 20vh;
+          height: auto;
+
+        }
+        img {
+          width: 100%;
+          background-size: cover;
+          object-fit: cover;
+          border-radius: 10px;
+
+        }
     }
   }
 
@@ -1019,9 +1071,19 @@ a:hover, a:focus {
   }
 
   .all-product{
+    .card-portrait{
+      img{
+        height: 220px  !important;
+      }
+    }
     .col-lg-3{
       display: block;
     }
+  }
+
+  // HIDE MOBILE MODE
+  .bny-card-services {
+    display: none;
   }
 }
 @media (max-width: 992px ){

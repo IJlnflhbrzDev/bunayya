@@ -16,6 +16,12 @@ body {
   font-size: 14px;
 }
 
+h2 {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
 .bny-warning {
   background-color: #fdd13a;
 }
@@ -677,6 +683,10 @@ body {
   margin-top: 20px;
 }
 
+.bny-banner-large .carousel .carousel-item {
+  max-height: 331px;
+}
+
 .bny-banner-large .carousel .carousel-indicators {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,13 +763,38 @@ body {
   height: 100%;
 }
 
+.bny-banner-large .banner-small .large-poster {
+  max-height: 46vh;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.bny-banner-large .banner-small .small-poster {
+  max-height: 20vh;
+  height: auto;
+}
+
 .bny-banner-large .banner-small img {
   width: 100%;
-  height: 100%;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.link-lihat-semua-koleksi {
+  margin-bottom: 0.5rem;
+  text-decoration: underline !important;
+  display: block;
+}
+
+.link-lihat-semua-koleksi i {
+  font-size: 11px;
+}
+
+.bny-banner-promo-small .link-lihat-semua-koleksi {
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .bny-card-services {
@@ -1140,18 +1175,32 @@ body {
 }
 
 @media (max-width: 552px) {
+  h2 {
+    font-size: 24px;
+  }
   .bny-navbar-mobile .bny-brand-mobile img {
     width: 27% !important;
   }
   .bny-banner-large {
     margin-top: 10px;
   }
+  .bny-banner-large .carousel-item {
+    height: auto !important;
+  }
+  .bny-banner-large .banner-small .large-poster {
+    max-height: 46vh;
+    height: 150px;
+    margin-bottom: 8px;
+  }
+  .bny-banner-large .banner-small .small-poster {
+    max-height: 20vh;
+    height: auto;
+  }
   .bny-banner-large .banner-small img {
     width: 100%;
-    height: 215px;
     background-size: cover;
     -o-object-fit: cover;
-    object-fit: fill;
+       object-fit: cover;
     border-radius: 10px;
   }
   .bny-card-services {
@@ -1181,8 +1230,14 @@ body {
     width: 20px;
     height: 20px;
   }
+  .all-product .card-portrait img {
+    height: 220px  !important;
+  }
   .all-product .col-lg-3 {
     display: block;
+  }
+  .bny-card-services {
+    display: none;
   }
 }
 
