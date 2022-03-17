@@ -1,0 +1,111 @@
+.bny-agen-checkout{
+     background: #fcfdfe!important ;
+
+     .address-box {
+
+               display: block;
+               margin: 1rem 0;
+               font-size: 80%;
+               padding: 1rem;
+               background-color: #f7f7f9;
+               color: rgba(0, 0, 0, 0.45);
+               #cust-name {
+                    font-size: 16px;
+               }
+
+               #cust-address {
+                    font-size: 14px ;
+               }
+          }
+          // Checkout modal chooser
+          .product-chooser {
+               display: -webkit-box;
+               display: -ms-flexbox;
+               display: flex;
+               -webkit-box-orient: horizontal;
+               -webkit-box-direction: normal;
+               -ms-flex-direction: row;
+               flex-direction: row;
+               -ms-flex-wrap: wrap;
+               flex-wrap: wrap;
+               -webkit-box-flex: 1;
+               -ms-flex: 1 0 auto;
+               flex: 1 0 auto;
+               margin-bottom: 1.5rem !important;
+          }
+
+          .product-chooser .product-chooser-item.selected:not(.disabled) {
+               -webkit-box-shadow: 0 0 0 2px #007bff;
+               box-shadow: 0 0 0 2px #007bff;
+               background-color: #ebf4ff;
+          }
+
+          .product-chooser .product-chooser-item {
+               -webkit-box-sizing: border-box;
+               box-sizing: border-box;
+               width: 100% !important;
+               display: inline-block;
+               margin: 0 12px 12px 0;
+               padding: 12px 16px;
+               border-radius: 6px;
+               cursor: pointer;
+               position: relative;
+               -webkit-box-shadow: 0 0 0 2px #eee;
+               box-shadow: 0 0 0 2px #eee;
+               background-color: #fff;
+               margin-right: 0 !important;
+               margin-bottom: .5rem !important;
+          }
+
+          .product-chooser .product-chooser-item input {
+               position: absolute;
+               left: 0;
+               top: 0;
+               visibility: hidden;
+          }
+
+          .product-chooser .product-chooser-item img {
+               min-width: 40px;
+               max-width: 60px;
+               height: auto;
+          }
+
+          .product-chooser-item .text-dark {
+               margin: .5rem 0 0 .5rem !important;
+               font-size: .975rem;
+          }
+
+          .bank-logo {
+               width: 100px;
+          }
+
+          .invalid-feedback {
+               display: none;
+          }
+
+          .product-chooser .product-chooser-item.disabled {
+               color: #d3d3d3;
+               -webkit-box-shadow: none;
+               box-shadow: none;
+               background-color: white;
+               cursor: default;
+          }
+
+          .product-chooser .product-chooser-item.disabled h5 {
+               color: #d3d3d3;
+          }
+
+     }
+
+// utilities
+@media(max-width: 552px){
+     .bny-w-md-100{width: 100% !important;}
+     .bny-w-md-50{width: 50% !important;}
+
+     .bny-btn-tambah-customer,.bny-btn-alamat-saya{
+          margin-top: 10px ;
+          width: 100% ;
+
+
+     }
+}

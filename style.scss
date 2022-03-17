@@ -1,3 +1,4 @@
+@import  './home-page/list-product/list-product','./home-page/checkout/checkout','./home-page/carts/carts','./home-page/produk-detail/product-detail';
 *{
   margin: 0;
   padding: 0 ;
@@ -1084,6 +1085,14 @@ a:hover, a:focus {
   // HIDE MOBILE MODE
   .bny-card-services {
     display: none;
+  }
+
+
+  // BNY PAGE AGEN PRODUK
+  .bny-card-product{
+    .bny-product-agen{
+      grid-template-columns: 1fr 1fr ;
+    }
   }
 }
 @media (max-width: 992px ){

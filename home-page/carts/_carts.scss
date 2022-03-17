@@ -1,0 +1,132 @@
+:root {
+	--primary-color: #7cc6f2;
+	--text-white: white;
+}
+.cart {
+	.product {
+		height: auto;
+		margin-bottom: 70px;
+		color: white;
+
+		.item {
+			box-sizing: border-box;
+			background-color: white;
+			height: auto;
+			margin-bottom: 10px;
+			position: relative;
+			width: 100%;
+			padding: 5px 0px;
+			border-radius: 10px;
+			overflow: hidden;
+			.parent-badge {
+				.card-badge-title {
+					width: max-content;
+				}
+			}
+			.item-main {
+				display: flex;
+				align-items: center;
+				.produk-content {
+					margin-left: 10px;
+				}
+
+				img {
+					border-radius: 5px;
+					float: none;
+					height: 95px;
+					margin-right: 10px;
+					object-fit: cover;
+					width: 95px;
+				}
+				a {
+					text-decoration: none;
+					color: black ;
+
+					h2 {
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+				h3 {
+					color: orange;
+					font-size: 18px;
+					font-weight: 700;
+					margin-top: 0px;
+				}
+				.clearfix {
+					clear: both;
+					&::after {
+						display: block;
+						clear: both;
+						content: "";
+					}
+				}
+			}
+			svg {
+				bottom: 11px;
+				position: absolute;
+				right: 10px;
+			}
+		}
+		.btn-outline-dark {
+			color: #243042;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+
+.total {
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+	align-self: flex-start;
+	border-radius: 5px;
+	box-sizing: border-box;
+	height: auto;
+	margin: 0px auto 50px auto;
+	padding: 20px;
+	position: sticky;
+	top: 90px;
+	width: 370px;
+
+	.title {
+		font-size: 18px;
+
+		font-weight: 600;
+	}
+	.list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		p {
+			font-size: 15px;
+			margin-bottom: 5px;
+		}
+	}
+	.btn {
+		width: 100%;
+	}
+}
+}
+
+@media screen and (max-width: 552px) {
+	.cart {
+		.product {
+			margin-bottom: 30px !important;
+		}
+	}
+	.cart .product .item .item-main a h2 {
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.cart .product .item .item-main h3 {
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.qty {
+		font-size: 12px;
+	}
+
+	.bgr-btn-mobile {
+		padding: 0px 7px !important;
+	}
+}

@@ -1,0 +1,107 @@
+@import './order-agen-detail','./checkout/checkout','./cart/cart','./riwayat-transaksi/riwayat-transaksi';
+
+*{
+     margin: 0;
+     padding: 0 ;
+
+     box-sizing: border-box;
+   }
+
+
+   html,body{
+     overflow-x: hidden;
+     height: 100%;
+
+   }
+   body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px ;
+   }
+   .container,.container-mobile {
+        position: relative;
+   }
+#bny-navbar-agen-order{
+    .navbar{
+         .dropdown{
+              font-weight:  500 ;
+              .dropdown-menu{
+                   i{
+                        margin-right: 10px ;
+                   }
+                   .log-out {
+                    .dropdown-item{
+                         &:hover{
+
+                              i{
+                                   color: red ;
+                              }
+                         }
+                    }
+               }
+              }
+          }
+     }
+     .dropdown-toggle{
+          &::after {
+               margin-left: 0.355em;
+               vertical-align: 0.255em;
+          }
+     }
+}
+
+.bny-card-product{
+     width: 100% ;
+     .bny-product-agen{
+          width: 100% ;
+          display: grid ;
+          justify-content: center ;
+          align-items: center;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          gap: 20px ;
+
+          a{
+               text-decoration: none;
+               color: black;
+               &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+               }
+          }
+     }
+
+     #bny-sticky-card {
+         position: relative;
+         .card{
+              position: sticky;
+                 top: 0;
+                     z-index: 1;
+
+         }
+
+     }
+}
+
+// add to cart product
+.body-add-to-cart-product{
+     img{
+          width: 50px ; height: 50px ;
+          background-size: cover; object-fit: cover;
+          margin-right: 10px ;
+     }
+}
+
+// menu mobile
+
+@media (max-width: 992px){
+
+
+    // utilities
+    .container-mobile{
+     width: 100% !important;
+     max-width: 100% !important;
+ padding-right: .75rem;
+ padding-left: .75rem;
+ margin-right: auto;
+ margin-left: auto;
+   }
+}

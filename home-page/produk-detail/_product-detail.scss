@@ -1,0 +1,213 @@
+.produk-detail {
+     .produk-image {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column-reverse;
+          overflow: hidden;
+
+          .image-large {
+               width: 100%;
+
+               img {
+                    height: 400px;
+                    background-size: cover;
+                    object-fit: cover;
+                    background-position: center;
+               }
+          }
+          img {
+               object-fit: cover;
+               background-size: cover;
+               width: 100%;
+               background-position: center;
+               &:hover {
+                    cursor: pointer;
+               }
+          }
+          .thumbnail {
+               width: 100%;
+          }
+          .thumb {
+               width: 100%;
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               height: 100px;
+               overflow: auto;
+               img {
+                    float: left;
+                    margin-bottom: 2px;
+                    height: 109px;
+
+                    &:hover {
+                         opacity: .5;
+                    }
+               }
+          }
+
+          .fade {
+               opacity: 1;
+               transition: all 0.55s ease;
+          }
+     }
+
+     .content-produk-detail {
+          h3 {
+               text-transform: uppercase;
+               font-size: 20px;
+               margin-bottom: 20px;
+          }
+          .price-detail-corret {
+               text-decoration: line-through;
+               color: gray;
+               margin: 2px;
+          }
+          .price-detail {
+               font-size: 19px;
+          }
+          p.price {
+               font-weight: 500;
+               font-size: 21px;
+               white-space: pre-wrap;
+          }
+          .select-variant {
+               display: flex;
+               justify-content: start;
+               align-items: center;
+               margin: 1.5rem 0px;
+               .form-select {
+                    width: 30%;
+                    background-color: #f8f9fa;
+                    color: black;
+                    border-color: #f8f9fa;
+                    background-image: url('../../fontawesome5/fontawesome-free-5.15.4-web/svgs/solid/chevron-down.svg');
+                    margin-right: 20px;
+               }
+          }
+
+          table {
+               th {
+                    font-weight: 600;
+               }
+               th,
+               td {
+                    color: black;
+               }
+          }
+          .input-jumlah {
+               display: flex;
+               justify-content: start;
+               align-items: center;
+               button#btn-plus {
+                    border-radius: 0px .25rem .25rem 0px;
+               }
+               button#btn-minus {
+                    border-radius: .25rem 0px 0px .25rem;
+               }
+               span#valueStok {
+                    width: 15%;
+                    background: white;
+                    height: 38px;
+                    text-align: center;
+                    color: black;
+                    line-height: 38px;
+               }
+          }
+     }
+
+     .total {
+          box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+          align-self: flex-start;
+          border-radius: 5px;
+          box-sizing: border-box;
+          height: auto;
+          margin: 0px auto 50px auto;
+          padding: 20px;
+          position: sticky;
+          top: 90px;
+          width: 370px;
+
+          .title {
+               font-size: 18px;
+
+               font-weight: 600;
+          }
+          .list {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               p {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+               }
+          }
+          .btn {
+               width: 100%;
+          }
+     }
+     .info-toko-penjual {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          padding: 10px;
+          small {
+               font-size: 14px;
+               color: #aaa;
+          }
+          .info-heading {
+               color: black;
+               margin-left: 8px;
+          }
+
+          .info-toko {
+               display: flex;
+               align-items: center;
+               h4 {
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    font-size: 18px;
+               }
+               img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    margin-right: 20px;
+               }
+               .btn {
+                    margin-top: 5px;
+               }
+          }
+     }
+
+     @media screen and (max-width: 400px) {
+          .navbar-toggler {
+               padding: 0.12rem 0.5rem;
+               font-size: 1.10rem;
+          }
+          .navbar-brand {
+               font-size: 18px !important;
+          }
+          .produk-detail {
+               .btn-produk-detail {
+                    .btn {
+                         padding: 0.175rem 0.55rem;
+                         font-size: .8rem;
+                    }
+               }
+          }
+     }
+
+     @media screen and (max-width: 290px) {
+          .produk-detail {
+               .btn-produk-detail {
+                    .btn {
+                         margin-bottom: 5px;
+                         padding: 0.175rem 0.55rem;
+                         font-size: .8rem;
+                         width: 100%;
+                    }
+               }
+          }
+     }
+
+}

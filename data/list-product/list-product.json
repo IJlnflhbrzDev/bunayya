@@ -1,0 +1,78 @@
+{
+     "status_code": 200,
+     "message": "Success",
+     "data": [
+          {
+               "id": 1,
+               "product_name": "Kurta Orizont",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/f6dOtABRaXysLodf6dtCOsQIzOrzzcQlCBjxEWUBp5g.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "koleksiHariIni"
+          },
+          {
+               "id": 2,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fzYbzWbLMtFlhr8fz6n3jqskDEYFe1S2C5S8TQZX41A.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "koleksiHariIni"
+          },
+          {
+               "id": 3,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fBcSWzQ6R2NcfkhfBcbeabfW87SxiXQxOfbHTRjQHBsg.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "koleksiHariIni"
+          },
+          {
+               "id": 4,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fYSN1ArGesJCMffYErr4ZitWQtxGtQmSqqK6DqINBug.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "koleksiHariIni"
+          },
+          {
+               "id": 5,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fcSZKWuaoTBs0UpfcSaeCNnUf90EdISeWfUA5lX5wjOQ.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "On Sale"
+          },
+          {
+               "id": 6,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fMosokHbhnUbEQfM5NUsKbbvDr0MRDaX3PDbcTATow.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "On Sale"
+          },
+          {
+               "id": 7,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5gpdqvnq_3/f3UsoHXgJnAHfwMf3GAqijjdeueRpASdyGkqUfCtAhLQ.png",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "On Sale"
+          },
+          {
+               "id": 8,
+               "product_name": "Kurta Basic",
+               "photo_pet": "https://bdsgp.my.id/img/600/bw5d48ohbw5fisnofm_3/fM5Vc0myu1DDLkzfMYIhKcgfDHWvgaTTT0hAuoTNAA.webp",
+               "discount_percent": 8,
+               "sell_price": 120000,
+               "scriblle_price": 110000,
+               "type": "On Sale"
+          }
+     ]
+}

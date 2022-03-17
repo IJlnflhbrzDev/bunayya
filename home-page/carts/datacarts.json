@@ -1,0 +1,47 @@
+{
+     "status_code": 200,
+     "found": true,
+     "message": "",
+     "data": [
+          {
+               "cart_id": 1,
+               "cart_img": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+               "cart_name": "AMD Paket PC Desktop Gaming Rakitan || Terbatas",
+               "cart_jumlah_barang": 2,
+               "stok": 20,
+               "cart_harga": "Rp 2.500.000"
+          },
+          {
+               "cart_id": 2,
+               "cart_img": "https://images.unsplash.com/photo-1585143042060-77fd3b53905a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+               "cart_name": "CODING Paket PC Desktop coding Rakitan || Terbaru",
+               "cart_jumlah_barang": 4,
+               "stok": 20,
+               "cart_harga": "Rp 1.550.000"
+          },
+          {
+               "cart_id": 3,
+               "cart_img": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmV0YWlsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+               "cart_name": "Paket baju lebaran simple dan originall ",
+               "cart_jumlah_barang": 6,
+               "stok": 20,
+               "cart_harga": "Rp 2.250.000"
+          },
+          {
+               "cart_id": 4,
+               "cart_img": "https://images.unsplash.com/photo-1603400521630-9f2de124b33b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+               "cart_name": "Fasion musim panas terbaru dan cocok untuk musim dingin",
+               "cart_jumlah_barang": 8,
+               "stok": 20,
+               "cart_harga": "Rp 3.150.000"
+          },
+          {
+               "cart_id": 5,
+               "cart_img": "https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+               "cart_name": "Paket lengkap untuk model pemula rapih dan elegan",
+               "cart_jumlah_barang": 10,
+               "stok": 20,
+               "cart_harga": "Rp 4.000.000"
+          }
+     ]
+}

@@ -1,0 +1,816 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.order-agen-detail .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-agen-detail .input-group-btn-vertical button {
+  font-size: xx-small;
+  padding: 2px 7px;
+  font-weight: bold;
+}
+
+.order-agen-detail .product-description-wrap .text-muted {
+  color: #3e4143 !important;
+}
+
+#bny-sticky-card .card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.bny-navbar-mobile {
+  /* closing animation */
+}
+
+.bny-navbar-mobile .wrapper {
+  position: fixed;
+  top: 0;
+  /*left: -100%;*/
+  left: -100%;
+  height: 100%;
+  z-index: 3;
+  width: 100%;
+  background: white;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content a {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  color: #212529;
+  padding: 15px 20px;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .separator-menu-mobile {
+  border-top: 1px solid #adb5bd;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .icon-link-mobile a {
+  padding: 12px 20px;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .icon-link-mobile a i {
+  margin-right: 7px;
+  opacity: .6;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .icon-link-mobile a:hover i {
+  opacity: 1;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help {
+  margin-top: 15px;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .title-need-help {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: #1e1e1e;
+  font-weight: 500;
+  padding: 0px 20px;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .circle-icon-help-menu {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .circle-icon-help-menu a {
+  margin-right: 10px;
+  width: 33px;
+  height: 33px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .circle-icon-help-menu .phone {
+  background-color: #da1e28;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .circle-icon-help-menu .whatsApp {
+  background-color: #28a745;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .circle-icon-help-menu .mail {
+  background-color: #0062ff;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .shorcut-menu-link-help {
+  padding: 0px 0px 20px 0px;
+}
+
+.bny-navbar-mobile .wrapper .bny-menu-content .need-help .shorcut-menu-link-help a {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  margin-top: 13px;
+  padding: 0 20px;
+}
+
+.bny-navbar-mobile #active:checked ~ .wrapper {
+  /*left: 0;*/
+  left: 0;
+}
+
+.bny-navbar-mobile .menu-btn {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 18px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bny-navbar-mobile .menu-btn span,
+.bny-navbar-mobile .menu-btn:before,
+.bny-navbar-mobile .menu-btn:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid #000;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.bny-navbar-mobile .menu-btn:before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.bny-navbar-mobile .menu-btn:after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.bny-navbar-mobile .close {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-transition: background .6s;
+  transition: background .6s;
+}
+
+.bny-navbar-mobile #active:checked + .menu-btn span {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.bny-navbar-mobile #active:checked + .menu-btn:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-color: black;
+}
+
+.bny-navbar-mobile #active:checked + .menu-btn:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-color: black;
+}
+
+.bny-navbar-mobile input[type="checkbox"] {
+  display: none;
+}
+
+.bny-navbar-mobile .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+
+.bny-navbar-mobile .content .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bny-navbar-mobile .content p {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.bny-navbar-mobile #active:checked ~ .wrapper ul li a {
+  opacity: 1;
+}
+
+.bny-navbar-mobile .wrapper ul li a {
+  -webkit-transition: opacity 1.2s, -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s, -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.bny-navbar-mobile #active:checked ~ .wrapper ul li a {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
+          transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
+  /* easeOutBackを緩めた感じ */
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.bny-navbar-mobile {
+  display: none;
+}
+
+.bny-add-to-cart-mobile {
+  display: none;
+}
+
+.body-add-to-cart-product .description-product .fa-trash {
+  cursor: pointer;
+}
+
+@media (max-width: 552px) {
+  .bny-add-to-cart-mobile {
+    display: block;
+    position: absolute;
+    right: 15px;
+  }
+  #bny-sticky-card {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: 40px;
+  }
+  .bny-navbar-mobile {
+    display: block;
+  }
+  .bny-navbar-mobile .bny-menu-mobile .label-menu {
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 1px solid #adb5bd;
+    padding-bottom: 5px;
+    margin-top: 17px;
+  }
+  .order-agen-detail .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-agen-detail .media-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .order-agen-detail .media-right a {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .order-agen-detail .media-right form {
+    width: 50%;
+  }
+  .order-agen-detail .media-right form .btn {
+    width: 100%;
+  }
+}
+
+.bny-agen-checkout {
+  background: #fcfdfe !important;
+}
+
+.bny-agen-checkout .address-box {
+  display: block;
+  margin: 1rem 0;
+  font-size: 80%;
+  padding: 1rem;
+  background-color: #f7f7f9;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.bny-agen-checkout .address-box #cust-name {
+  font-size: 16px;
+}
+
+.bny-agen-checkout .address-box #cust-address {
+  font-size: 14px;
+}
+
+.bny-agen-checkout .product-chooser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-bottom: 1.5rem !important;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item.selected:not(.disabled) {
+  -webkit-box-shadow: 0 0 0 2px #007bff;
+  box-shadow: 0 0 0 2px #007bff;
+  background-color: #ebf4ff;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100% !important;
+  display: inline-block;
+  margin: 0 12px 12px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 0 0 0 2px #eee;
+  box-shadow: 0 0 0 2px #eee;
+  background-color: #fff;
+  margin-right: 0 !important;
+  margin-bottom: .5rem !important;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item img {
+  min-width: 40px;
+  max-width: 60px;
+  height: auto;
+}
+
+.bny-agen-checkout .product-chooser-item .text-dark {
+  margin: .5rem 0 0 .5rem !important;
+  font-size: .975rem;
+}
+
+.bny-agen-checkout .bank-logo {
+  width: 100px;
+}
+
+.bny-agen-checkout .invalid-feedback {
+  display: none;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item.disabled {
+  color: #d3d3d3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: white;
+  cursor: default;
+}
+
+.bny-agen-checkout .product-chooser .product-chooser-item.disabled h5 {
+  color: #d3d3d3;
+}
+
+@media (max-width: 552px) {
+  .bny-w-md-100 {
+    width: 100% !important;
+  }
+  .bny-w-md-50 {
+    width: 50% !important;
+  }
+  .bny-btn-tambah-customer, .bny-btn-alamat-saya {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.bny-page-cart {
+  /* Global "table" column settings */
+  /* This is used as the traditional .clearfix class */
+  /* Apply clearfix in a few places */
+  /* Apply dollar signs */
+  /* Body/Header stuff */
+  /* Column headers */
+  /* Product entries */
+  /* Totals section */
+}
+
+.bny-page-cart .product-image {
+  float: left;
+  width: 20%;
+}
+
+.bny-page-cart .product-details {
+  float: left;
+  width: 37%;
+}
+
+.bny-page-cart .product-price {
+  float: left;
+  width: 12%;
+}
+
+.bny-page-cart .product-quantity {
+  float: left;
+  width: 10%;
+}
+
+.bny-page-cart .product-removal {
+  float: left;
+  width: 9%;
+}
+
+.bny-page-cart .product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+.bny-page-cart .group:before, .bny-page-cart .shopping-cart:before, .bny-page-cart .column-labels:before, .bny-page-cart .product:before, .bny-page-cart .totals-item:before,
+.bny-page-cart .group:after,
+.bny-page-cart .shopping-cart:after,
+.bny-page-cart .column-labels:after,
+.bny-page-cart .product:after,
+.bny-page-cart .totals-item:after {
+  content: '';
+  display: table;
+}
+
+
+.bny-page-cart .group:after,
+.bny-page-cart .shopping-cart:after,
+.bny-page-cart .column-labels:after,
+.bny-page-cart .product:after,
+.bny-page-cart .totals-item:after {
+  clear: both;
+}
+
+.bny-page-cart .group, .bny-page-cart .shopping-cart, .bny-page-cart .column-labels, .bny-page-cart .product, .bny-page-cart .totals-item {
+  zoom: 1;
+}
+
+.bny-page-cart .product .product-price:before, .bny-page-cart .product .product-line-price:before, .bny-page-cart .totals-value:before {
+  content: '$';
+}
+
+.bny-page-cart label {
+  color: #aaa;
+}
+
+.bny-page-cart .shopping-cart {
+  margin-top: 0px !important;
+}
+
+.bny-page-cart .column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.bny-page-cart .column-labels .product-image, .bny-page-cart .column-labels .product-details, .bny-page-cart .column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+.bny-page-cart .product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.bny-page-cart .product .product-image img {
+  width: 100px;
+}
+
+.bny-page-cart .product .product-details .product-title {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bny-page-cart .product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+
+.bny-page-cart .product .product-quantity input {
+  width: 40px;
+}
+
+.bny-page-cart .product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.bny-page-cart .product .remove-product:hover {
+  background-color: rgba(238, 3, 3, 0.918);
+}
+
+.bny-page-cart .totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.bny-page-cart .totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.bny-page-cart .totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+
+.bny-page-cart .checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+}
+
+.bny-page-cart .checkout:hover {
+  background-color: #494;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .bny-page-cart .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  .bny-page-cart .column-labels {
+    display: none;
+  }
+  .bny-page-cart .product-image {
+    float: right;
+    width: auto;
+  }
+  .bny-page-cart .product-image img {
+    margin: 0 0 10px 10px;
+  }
+  .bny-page-cart .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .bny-page-cart .product-price {
+    clear: both;
+    width: 70px;
+  }
+  .bny-page-cart .product-quantity {
+    width: 100px;
+  }
+  .bny-page-cart .product-quantity input {
+    margin-left: 20px;
+  }
+  .bny-page-cart .product-quantity:before {
+    content: 'x';
+  }
+  .bny-page-cart .product-removal {
+    width: auto;
+  }
+  .bny-page-cart .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .bny-page-cart .product-removal {
+    float: right;
+  }
+  .bny-page-cart .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+  .bny-page-cart .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+  .bny-page-cart .totals .totals-item label {
+    width: 60%;
+  }
+  .bny-page-cart .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}
+
+.bny-riwayat-transaction .btn-status .btn-primary {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.bny-riwayat-transaction .btn-status .badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  background-color: red;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.bny-riwayat-transaction .btn-status .active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+@media (max-width: 552px) {
+  .bny-riwayat-transaction .btn-status .d-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .container-mobile {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container, .container-mobile {
+  position: relative;
+}
+
+#bny-navbar-agen-order .navbar .dropdown {
+  font-weight: 500;
+}
+
+#bny-navbar-agen-order .navbar .dropdown .dropdown-menu i {
+  margin-right: 10px;
+}
+
+#bny-navbar-agen-order .navbar .dropdown .dropdown-menu .log-out .dropdown-item:hover i {
+  color: red;
+}
+
+#bny-navbar-agen-order .dropdown-toggle::after {
+  margin-left: 0.355em;
+  vertical-align: 0.255em;
+}
+
+.bny-card-product {
+  width: 100%;
+}
+
+.bny-card-product .bny-product-agen {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.bny-card-product .bny-product-agen a {
+  text-decoration: none;
+  color: black;
+}
+
+.bny-card-product .bny-product-agen a:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.bny-card-product #bny-sticky-card {
+  position: relative;
+}
+
+.bny-card-product #bny-sticky-card .card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.body-add-to-cart-product img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .container-mobile {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*# sourceMappingURL=order-agen.css.map */

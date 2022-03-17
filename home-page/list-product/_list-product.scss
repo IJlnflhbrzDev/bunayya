@@ -1,0 +1,350 @@
+:root {
+	// --primary-color: #03ac0e;
+	--primary-color: #7cc6f2;
+	--text-white: white;
+}
+// change background pagination
+.UIproduk_filter {
+	.all-product {
+		a {
+			text-decoration: none;
+		}
+		.card.card-portrait {
+			margin-bottom: 20px;
+			box-shadow: #31353b1f 0px 1px 6px 0px;
+			border-radius: 9px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				background-size: cover;
+				background-position: center;
+			}
+			.card-body {
+				padding: 8px;
+				h5 {
+					margin-bottom: 4px;
+					font-size: 0.86rem;
+					color: rgba(49, 53, 59, 0.96);
+					max-width: 100%;
+					max-height: 100%;
+					text-overflow: ellipsis;
+					word-break: break-all;
+					overflow: hidden;
+					white-space: pre-wrap;
+					line-height: 1.5;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+				}
+				.card-price {
+					margin-bottom: 4px;
+					color: rgba(49, 53, 59, 0.96);
+					opacity: 1;
+					font-size: 1rem;
+					font-weight: bold;
+					align-items: flex-end;
+					line-height: 1.43;
+				}
+				.card-discount {
+					display: flex;
+					margin-bottom: 4px;
+					width: 100%;
+					flex-direction: column-reverse;
+
+					.card-discount-title {
+						width: 30px;
+						height: 20px;
+						border-radius: 3px;
+						background-color: #ffeaef;
+						font-size: 0.714286rem;
+						font-weight: bold;
+						color: #ff5c84;
+						display: flex;
+						-webkit-box-pack: center;
+						justify-content: center;
+						-webkit-box-align: center;
+						align-items: center;
+						display: none;
+					}
+
+					.parent-badge {
+						display: grid;
+						grid-template-columns: repeat(3, 1fr);
+						.card-badge-title {
+							display: block;
+							height: max-content;
+							margin-top: 3px;
+							margin-right: 3px;
+							border-radius: 3px;
+							background-color: var(--primary-color);
+							font-size: 0.614286rem;
+							font-weight: bold;
+							color: white;
+							text-align: center;
+							padding: 3px;
+						}
+					}
+					.card-discount-potongan-harga {
+						font-size: 0.714286rem;
+						color: rgba(49, 53, 59, 0.44);
+						text-decoration: line-through;
+						max-width: 100px;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						margin: 0px 0px 0px 4px;
+					}
+				}
+				// end card discount
+				.card-lokasi-toko {
+					a {
+						display: flex;
+						align-items: center;
+						color: rgba(49, 53, 59, 0.54);
+						font-size: 0.85rem;
+						line-height: 11px;
+						margin-top: 7px;
+						margin-bottom: 7px;
+						justify-content: center;
+						text-decoration: none;
+						.card-lokasi-toko-title {
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							width: 100%;
+						}
+
+						i {
+							margin-right: 4px;
+						}
+					}
+				}
+				// end card lokaso toko
+				.card-progress {
+					margin-top: 10px;
+					.progress {
+						width: 100%;
+						height: 6px;
+					}
+				}
+
+				// rating-toko
+				.rating-toko {
+					color: rgba(49, 53, 59, 0.68);
+					display: flex;
+					align-items: center;
+					overflow: hidden;
+					width: 100%;
+					i {
+						// color: gold;
+						margin-right: 4px;
+					}
+					.rating-toko-number {
+						display: flex;
+						font-size: 0.85rem;
+						color: rgba(49, 53, 59, 0.68);
+						align-items: center;
+						line-height: normal;
+						height: 12px;
+					}
+					.rating-toko-pemisah {
+						margin: 1px 4px 0px;
+						height: 10px;
+						width: 1px;
+						background: rgba(49, 53, 59, 0.32);
+					}
+					.rating-toko-terjual {
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+						font-weight: normal;
+						height: auto;
+						line-height: normal;
+						margin-bottom: 0px;
+						padding: 0px;
+						font-size: 0.85rem;
+					}
+				}
+			}
+		}
+	}
+	.custom-width-col-2 {
+		width: 22%;
+	}
+	.custom-width-col-10 {
+		width: 78%;
+	}
+	.btn-close {
+		filter: invert(1);
+		opacity: 1;
+	}
+	/* FORM FILTER */
+	.flex-agen {
+		display: flex;
+	}
+	.flex-row {
+		width: 90%;
+	}
+	.section-agen {
+		// flex-wrap: wrap;
+		.row {
+			.col-lg-3 {
+				margin-top: 10px;
+				width: 20%;
+			}
+		}
+		.filter-produk {
+			width: 25%;
+			margin-top: 20px;
+			position: sticky;
+			margin-right: 20px;
+			height: max-content;
+			top: 10px;
+			display: none;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			border-radius: 5px;
+			overflow: hidden;
+			.top {
+				background-color: var(--primary-color);
+				box-sizing: border-box;
+				height: auto;
+				width: 100%;
+				padding: 12px 17px;
+				p {
+					font-size: 18px;
+					margin-bottom: 0;
+					color: white;
+				}
+			}
+			.sub-title {
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 7px;
+				margin-top: 10px;
+				padding: 0px 17px;
+			}
+			.sub-title-small {
+				font-size: 80%;
+				font-weight: 400;
+				padding: 0px 17px;
+				display: block;
+			}
+			.form-check {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0px 17px 0px 0px;
+
+				.form-check-label {
+					cursor: pointer;
+					display: block;
+					order: 1;
+					padding: 5px 17px;
+				}
+				.form-check-input {
+					cursor: pointer;
+					display: block;
+					order: 2;
+				}
+			}
+			.select-input {
+				padding: 0px 17px;
+				input {
+					margin: 5px 0px;
+					color: black;
+				}
+			}
+			.form-select {
+				background-image: url('./down-chevron.png');
+				cursor: pointer;
+				padding: 0.375rem 17px;
+				margin: 10px 0px;
+				background-color: var(--primary-color);
+				border-color: var(--primary-color);
+				color: white;
+			}
+			.filter-harga {
+				padding: 20px 17px;
+				.form-control {
+					margin: 10px 0px;
+					color: black;
+				}
+			}
+		}
+	}
+
+	// humberger
+	.btn_close_produk {
+		display: none;
+	}
+	.btn-show-filter {
+		display: none;
+	}
+	.btn-show-filter-fixed {
+		position: fixed;
+		z-index: 2;
+	}
+	.ui_show_filter_fixed.close_show_produk {
+		left: -100% !important;
+		width: 0% !important;
+	}
+	.ui_show_filter_fixed {
+		position: fixed !important;
+		z-index: 2 !important;
+		opacity: 1 !important;
+
+		width: 80%;
+		left: 50% !important;
+		background-color: var(--primary-color);
+		transform: translateX(-50%);
+		.btn-close {
+			filter: invert(1);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.UIproduk_filter {
+
+		.filter-produk {
+			width: 50% !important;
+		}
+	}
+
+}
+@media (max-width: 552px) {
+	.UIproduk_filter {
+           .section-agen {
+               .row {
+                    .col-lg-3{
+                         width : 50% ;
+               }
+          }
+           }
+		.filter-produk {
+			z-index: 2;
+			width: 100% !important;
+			position: relative !important;
+			top: auto;
+			left: auto;
+			bottom: auto;
+			right: auto;
+			height: auto !important;
+		}
+		.flex-agen {
+			flex-direction: column;
+		}
+		.flex-row {
+			width: auto;
+		}
+	}
+}
+
+.flex-row {
+	.col-lg-3 {
+		width: 25% !important;
+	}
+}

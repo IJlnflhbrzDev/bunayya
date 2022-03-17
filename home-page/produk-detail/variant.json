@@ -1,0 +1,90 @@
+{
+     "success": true,
+     "found": true,
+     "data": {
+          "list_variant": [
+               {
+                    "product_id": 1,
+                    "harga": "Rp 100.000",
+                    "harga_corret": "Rp 110.000",
+                    "gambar": "https://images.unsplash.com/photo-1542735128-a1eb57a8fa0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZCUyMHQlMjBzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                    "variant1_name": "Warna",
+                    "variant1_value": "Kuning",
+                    "variant2_name": "Ukuran",
+                    "variant2_value": "XL",
+                    "variant3_name": "Bahan",
+                    "variant3_value": "Katun",
+                    "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis",
+                    "stok": 4
+               },
+               {
+                    "product_id": 2,
+                    "harga": "Rp 190.000",
+                    "harga_corret": "",
+                    "gambar": "https://images.unsplash.com/photo-1542735128-a1eb57a8fa0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZCUyMHQlMjBzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                    "variant1_name": "Warna",
+                    "variant1_value": "Merah",
+                    "variant2_name": "Ukuran",
+                    "variant2_value": "M",
+                    "variant3_name": "Bahan",
+                    "variant3_value": "Combed",
+                    "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis",
+                    "stok": 2
+               },
+               {
+                    "product_id": 3,
+                    "harga": "Rp 110.000",
+                    "harga_corret": "Rp 120.000",
+                    "gambar": "https://media.istockphoto.com/photos/handsome-african-american-man-in-blank-black-tshirt-standing-against-picture-id1011172576?b=1&k=20&m=1011172576&s=170667a&w=0&h=lXbzg7YuYDBMFd_n4vIbAgi6tmX8MFOtpJ6xZRMRDS4=",
+                    "variant1_name": "Warna",
+                    "variant1_value": "Black",
+                    "variant2_name": "Ukuran",
+                    "variant2_value": "XL",
+                    "variant3_name": "Bahan",
+                    "variant3_value": "Wadimor",
+                    "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis",
+                    "stok": 6
+               },
+               {
+                    "product_id": 4,
+                    "harga": "Rp 200.000",
+                    "harga_corret": "Rp 310.000",
+                    "gambar": "https://images.unsplash.com/photo-1569271434539-87ce3bbbaa06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZSUyMHQlMjBzaGlydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                    "variant1_name": "Warna",
+                    "variant1_value": "Biru",
+                    "variant2_name": "Ukuran",
+                    "variant2_value": "M",
+                    "variant3_name": "Bahan",
+                    "variant3_value": "Gajah",
+                    "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis",
+                    "stok": 7
+               }
+          ],
+          "type_variant": [
+               "Warna",
+               "Ukuran",
+               "Bahan"
+          ],
+          "variant1": [
+               "Merah",
+               "Biru",
+               "Kuning",
+               "Black",
+               "Jingga"
+          ],
+          "variant2": [
+               "S",
+               "M",
+               "L",
+               "XL",
+               "XXL"
+          ],
+          "variant3": [
+               "Katun",
+               "Combed",
+               "Gajah",
+               "Wadimor",
+               "ikan"
+          ]
+     }
+}
