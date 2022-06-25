@@ -951,7 +951,8 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -2086,7 +2087,8 @@ h2 {
   display: block;
 }
 
-#bny-footers a:hover, #bny-footers a:focus {
+#bny-footers a:hover,
+#bny-footers a:focus {
   text-decoration: none;
 }
 
@@ -2097,6 +2099,19 @@ h2 {
 
 #bny-footers .form-control:focus {
   background: #212529;
+}
+
+#bny-footers .img-jasa-pengiriman.bank-parner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bny-footers .img-jasa-pengiriman {
@@ -2115,7 +2130,7 @@ h2 {
 #bny-footers .img-jasa-pengiriman img {
   background-color: transparent;
   border: none;
-  width: 70%;
+  width: 80%;
   margin-bottom: 10px;
 }
 
@@ -2176,7 +2191,7 @@ h2 {
     height: 20px;
   }
   .all-product .card-portrait img {
-    height: 220px  !important;
+    height: 220px !important;
   }
   .all-product .col-lg-3 {
     display: block;
@@ -2191,7 +2206,8 @@ h2 {
 }
 
 @media (max-width: 992px) {
-  .bny-navbar-dekstop, .bny-category-dekstop {
+  .bny-navbar-dekstop,
+  .bny-category-dekstop {
     display: none;
   }
   .bny-navbar-mobile {
