@@ -791,7 +791,7 @@
   width: 30%;
   background-color: #f8f9fa;
   color: black;
-  border-color: #f8f9fa;
+  border-color: lightgray;
   background-image: url("../../fontawesome5/fontawesome-free-5.15.4-web/svgs/solid/chevron-down.svg");
   margin-right: 20px;
 }
