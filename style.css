@@ -1629,8 +1629,8 @@ h2 {
   margin-top: 20px;
 }
 
-.bny-banner-large .carousel .carousel-item {
-  max-height: 331px;
+.bny-banner-large .carousel .carousel-item img {
+  max-height: 360px;
 }
 
 .bny-banner-large .carousel .carousel-indicators {
@@ -1706,12 +1706,10 @@ h2 {
 
 .bny-banner-large .banner-small {
   width: 100%;
-  height: 100%;
 }
 
 .bny-banner-large .banner-small .large-poster {
-  max-height: 46vh;
-  height: auto;
+  height: 170px;
   margin-bottom: 20px;
 }
 
@@ -2134,7 +2132,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-@media (max-width: 552px) {
+@media screen and (max-width: 552px) {
+  .bny-banner-large .banner-small .large-poster {
+    height: 130px;
+  }
+  body .bny-banner-large .carousel .carousel-item img {
+    max-height: 220px !important;
+    height: 220px !important;
+  }
   h2 {
     font-size: 24px;
   }
@@ -2144,8 +2149,9 @@ h2 {
   .bny-banner-large {
     margin-top: 10px;
   }
-  .bny-banner-large .carousel-item {
-    height: auto !important;
+  .bny-banner-large body .bny-banner-large .carousel .carousel-item img {
+    max-height: 220px !important;
+    height: 220px !important;
   }
   .bny-banner-large .banner-small .large-poster {
     max-height: 46vh;
@@ -2335,6 +2341,12 @@ h2 {
     padding-left: .75rem;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bny-banner-large .banner-small .large-poster {
+    height: 152px;
   }
 }
 /*# sourceMappingURL=style.css.map */
